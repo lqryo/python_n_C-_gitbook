@@ -359,12 +359,109 @@
             
         </li>
     
+        <li class="chapter " data-level="3.4" data-path="../chapter3/3_4.html">
+            
+                <a href="../chapter3/3_4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    跨平台调用C语言库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../chapter3/3_5.html">
+            
+                <a href="../chapter3/3_5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Ctypes获取返回值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../chapter3/3_6.html">
+            
+                <a href="../chapter3/3_6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    Ctypes传递回调函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../chapter3/3_7.html">
+            
+                <a href="../chapter3/3_7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    在c函数中调用Python函数s
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
-        <li class="header">Part4</li>
+        <li class="header">Python源码跨平台的编译</li>
         
         
+    
+        <li class="chapter " data-level="4.1" data-path="../chapter4/4_1.html">
+            
+                <a href="../chapter4/4_1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Python源码编译和安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python的C-C++扩展库——模块和函数</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../chapter5/5_1.html">
+            
+                <a href="../chapter5/5_1.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Python的C扩展库模块入口创建
+            
+                </a>
+            
+
+            
+        </li>
     
 
     
@@ -429,7 +526,7 @@
 logf <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&quot;log.txt&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">)</span> <span class="token comment">#a&#x8868;&#x793A;&#x7528;&#x8FFD;&#x52A0;&#x7684;&#x65B9;&#x5F0F;,&#x9ED8;&#x8BA4;&#x4E3A;&#x53EA;&#x8BFB;&#x6253;&#x5F00;</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;Log to file&quot;</span><span class="token punctuation">,</span><span class="token builtin">file</span> <span class="token operator">=</span> logf<span class="token punctuation">)</span> <span class="token comment">#&#x5C06;&quot;Log to file&quot;&#x4EE5;&#x8FFD;&#x52A0;&#x65B9;&#x5F0F;&#x5199;&#x5165;logf&#x6587;&#x4EF6;</span>
 logf<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token comment"># &#x6CE8;&#x610F;&#x5BF9;&#x4E8E;&#x6587;&#x4EF6;&#xFF0C;&#x518D;&#x7ED3;&#x675F;&#x7684;&#x65F6;&#x5019;&#x8981;&#x5C06;&#x5176;&#x5173;&#x95ED;&#xFF0C;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x3002;&#x56E0;&#x4E3A;&#x6587;&#x4EF6;&#x53E5;&#x67C4;&#x662F;&#x6709;&#x9650;&#x7684;&#x3002;</span>
+<span class="token comment"># &#x6CE8;&#x610F;&#x5BF9;&#x4E8E;&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x7ED3;&#x675F;&#x7684;&#x65F6;&#x5019;&#x8981;&#x5C06;&#x5176;&#x5173;&#x95ED;&#xFF0C;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x3002;&#x56E0;&#x4E3A;&#x6587;&#x4EF6;&#x53E5;&#x67C4;&#x662F;&#x6709;&#x9650;&#x7684;&#x3002;</span>
 <span class="token comment"># &#x6587;&#x4EF6;&#x5173;&#x95ED;&#x65F6;&#x4F1A;&#x5C06;&#x7F13;&#x51B2;&#x533A;&#x5185;&#x5BB9;&#x5168;&#x90E8;&#x5199;&#x5165;</span>
 </code></pre>
 <p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x7528;print&#x540C;&#x65F6;&#x4F7F;&#x7528;<code>stdout</code>&#x548C;<code>stderr</code>&#x8FDB;&#x884C;&#x8F93;&#x51FA;&#x65F6;&#xFF0C;&#x4E8C;&#x8005;&#x7684;&#x8F93;&#x51FA;&#x987A;&#x5E8F;&#x672A;&#x5FC5;&#x548C;&#x4EE3;&#x7801;&#x987A;&#x5E8F;&#x76F8;&#x540C;&#xFF0C;&#x56E0;&#x4E3A;<code>stdout</code>&#x548C;<code>stderr</code>&#x4F7F;&#x7528;&#x7684;&#x662F;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x7F13;&#x51B2;&#x533A;</p>
@@ -443,7 +540,7 @@ logf<span class="token punctuation">.</span>close<span class="token punctuation"
 csv<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
 <footer class="page-footer"><span class="copyright">&#xA9; liangqi all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-05-20
+2019-06-03
 </span></footer>
                                 
                                 </section>
@@ -487,7 +584,7 @@ csv<span class="token punctuation">.</span>close<span class="token punctuation">
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"print输出格式设定","level":"2.1","depth":1,"next":{"title":"注释、分号和换行","level":"2.2","depth":1,"path":"chapter2/2_2.md","ref":"chapter2/2_2.md","articles":[]},"previous":{"title":"介绍","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","codeblock-filename","tbfed-pagefooter","github","-lunr","-search","search-plus","ace","prism","prism-themes","code","expandable-chapters-small","splitter","emphasize","donate","change_girls","-back-to-top-button","pageview-count","anchor-navigation-ex"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy liangqi","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"emphasize":{},"ace":{},"github":{"url":"https://github.com/lqryo/python_n_C-_gitbook"},"splitter":{},"change_girls":{"time":30,"urls":["https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg","https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg"]},"code":{"copyButtons":true},"donate":{"alipay":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/AliPay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/WeixinPay.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"codeblock-filename":{},"pageview-count":{},"prism-themes":{},"expandable-chapters-small2":{"articlesExpand":true},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/2_1.md","mtime":"2019-05-20T14:53:00.035Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-22T14:16:16.117Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"print输出格式设定","level":"2.1","depth":1,"next":{"title":"注释、分号和换行","level":"2.2","depth":1,"path":"chapter2/2_2.md","ref":"chapter2/2_2.md","articles":[]},"previous":{"title":"介绍","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","codeblock-filename","tbfed-pagefooter","github","-lunr","-search","search-plus","ace","prism","prism-themes","code","expandable-chapters-small","splitter","emphasize","donate","change_girls","-back-to-top-button","pageview-count","anchor-navigation-ex","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy liangqi","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"emphasize":{},"ace":{},"github":{"url":"https://github.com/lqryo/python_n_C-_gitbook"},"livereload":{},"splitter":{},"change_girls":{"time":30,"urls":["https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg","https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg"]},"code":{"copyButtons":true},"donate":{"alipay":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/AliPay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/WeixinPay.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"codeblock-filename":{},"pageview-count":{},"prism-themes":{},"expandable-chapters-small2":{"articlesExpand":true},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/2_1.md","mtime":"2019-06-03T09:58:33.757Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-04T08:23:19.365Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -538,6 +635,10 @@ csv<span class="token punctuation">.</span>close<span class="token punctuation">
     
         
         <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

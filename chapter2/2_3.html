@@ -359,12 +359,109 @@
             
         </li>
     
+        <li class="chapter " data-level="3.4" data-path="../chapter3/3_4.html">
+            
+                <a href="../chapter3/3_4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    跨平台调用C语言库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../chapter3/3_5.html">
+            
+                <a href="../chapter3/3_5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Ctypes获取返回值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../chapter3/3_6.html">
+            
+                <a href="../chapter3/3_6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    Ctypes传递回调函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../chapter3/3_7.html">
+            
+                <a href="../chapter3/3_7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    在c函数中调用Python函数s
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
-        <li class="header">Part4</li>
+        <li class="header">Python源码跨平台的编译</li>
         
         
+    
+        <li class="chapter " data-level="4.1" data-path="../chapter4/4_1.html">
+            
+                <a href="../chapter4/4_1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Python源码编译和安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python的C-C++扩展库——模块和函数</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../chapter5/5_1.html">
+            
+                <a href="../chapter5/5_1.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Python的C扩展库模块入口创建
+            
+                </a>
+            
+
+            
+        </li>
     
 
     
@@ -412,14 +509,14 @@
                                 <section class="normal markdown-section">
                                 
                                 <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#python&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><b></b>Python&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</a></li><ul><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><b></b>&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</a></li><li><span class="title-icon "></span><a href="#python&#x5185;&#x90E8;&#x673A;&#x5236;"><b></b>python&#x5185;&#x90E8;&#x673A;&#x5236;</a></li></ul></ul></ul></div><a href="#python&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="python&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><a name="python&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#python&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>Python&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</h1>
-<p>python&#x7684;&#x6240;&#x6709;&#x7C7B;&#x578B;&#x90FD;&#x7C7B;&#x578B;C++&#x4E2D;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x5B83;&#x5185;&#x90E8;&#x901A;&#x8FC7;<strong>&#x5F15;&#x7528;&#x8BA1;&#x6570;</strong>&#x8FDB;&#x884C;&#x6765;&#x8FDB;&#x884C;&#x5783;&#x573E;&#x56DE;&#x6536;</p>
+<p>python&#x7684;&#x6240;&#x6709;&#x7C7B;&#x578B;&#x90FD;&#x7C7B;&#x4F3C;C++&#x4E2D;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x5B83;&#x5185;&#x90E8;&#x901A;&#x8FC7;<strong>&#x5F15;&#x7528;&#x8BA1;&#x6570;</strong>&#x8FDB;&#x884C;&#x6765;&#x8FDB;&#x884C;&#x5783;&#x573E;&#x56DE;&#x6536;</p>
 <ul>
-<li>Number String bytes  &#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x4E0D;&#x53EF;&#x53D8;</li>
-<li>List(&#x5217;&#x8868;) Dictionary(&#x5B57;&#x5178;) &#x5BB9;&#x5668;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4FEE;&#x6539;</li>
-<li>Tuple(&#x5143;&#x7EC4;) &#x4E0D;&#x53EF;&#x4FEE;&#x6539;</li>
+<li><strong>Number</strong> <strong>String</strong> <strong>bytes</strong>  &#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x4E0D;&#x53EF;&#x53D8;</li>
+<li><strong>List</strong>(&#x5217;&#x8868;) <strong>Dictionary</strong>(&#x5B57;&#x5178;) &#x5BB9;&#x5668;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4FEE;&#x6539;</li>
+<li><strong>Tuple</strong>(&#x5143;&#x7EC4;) &#x5BB9;&#x5668;&#x7C7B;&#x578B;&#xFF0C;&#x4E0D;&#x53EF;&#x4FEE;&#x6539;</li>
 </ul>
 <h3 id="&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><a name="&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
-<p>python3&#x4E2D;&#x7684;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6709;int float bool complex</p>
+<p>python3&#x4E2D;&#x7684;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6709;<strong>int</strong> <strong>float</strong> <strong>bool</strong> <strong>complex</strong></p>
 <pre class="language-"><code class="lang-python"><span class="token comment">#int</span>
 num <span class="token operator">=</span> <span class="token number">1</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token comment"># output: 1</span>
@@ -431,7 +528,7 @@ num <span class="token operator">=</span> <span class="token number">1.0</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># &lt;class &apos;float&apos;&gt;</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">id</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># 1686331552</span>
 </code></pre>
-<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#x7684;num&#x524D;&#x540E;&#x6307;&#x5411;&#x4E24;&#x5757;&#x4E0D;&#x540C;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;,&#x524D;&#x9762;&#x7684;&#x4E00;&#x5757;&#x7A7A;&#x95F4;&#x518D;<code>num = 1.0</code>&#x540E;&#x88AB;&#x91CA;&#x653E;</p>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#x7684;num&#x524D;&#x540E;&#x6307;&#x5411;&#x4E24;&#x5757;&#x4E0D;&#x540C;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;,&#x524D;&#x9762;&#x7684;&#x4E00;&#x5757;&#x7A7A;&#x95F4;&#x5728;<code>num = 1.0</code>&#x540E;&#x88AB;&#x91CA;&#x653E;</p>
 <h3 id="python&#x5185;&#x90E8;&#x673A;&#x5236;"><a name="python&#x5185;&#x90E8;&#x673A;&#x5236;" class="anchor-navigation-ex-anchor" href="#python&#x5185;&#x90E8;&#x673A;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>python&#x5185;&#x90E8;&#x673A;&#x5236;</h3>
 <p>python&#x7C7B;&#x578B;&#x7684;&#x5185;&#x90E8;&#x673A;&#x5236;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x4E0B;&#x9762;3&#x7BC7;&#x535A;&#x6587;</p>
 <ul>
@@ -440,7 +537,7 @@ num <span class="token operator">=</span> <span class="token number">1.0</span>
 <li><a href="https://blog.csdn.net/zhangyifei216/article/details/50667192" target="_blank">Python&#x5185;&#x90E8;&#x673A;&#x5236;-PyIntObject&#x5BF9;&#x8C61;</a></li>
 </ul>
 <footer class="page-footer"><span class="copyright">&#xA9; liangqi all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-05-20
+2019-06-03
 </span></footer>
                                 
                                 </section>
@@ -484,7 +581,7 @@ num <span class="token operator">=</span> <span class="token number">1.0</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Python基本数据类型","level":"2.3","depth":1,"next":{"title":"Python字符集问题","level":"2.4","depth":1,"path":"chapter2/2_4.md","ref":"chapter2/2_4.md","articles":[]},"previous":{"title":"注释、分号和换行","level":"2.2","depth":1,"path":"chapter2/2_2.md","ref":"chapter2/2_2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","codeblock-filename","tbfed-pagefooter","github","-lunr","-search","search-plus","ace","prism","prism-themes","code","expandable-chapters-small","splitter","emphasize","donate","change_girls","-back-to-top-button","pageview-count","anchor-navigation-ex"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy liangqi","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"emphasize":{},"ace":{},"github":{"url":"https://github.com/lqryo/python_n_C-_gitbook"},"splitter":{},"change_girls":{"time":30,"urls":["https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg","https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg"]},"code":{"copyButtons":true},"donate":{"alipay":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/AliPay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/WeixinPay.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"codeblock-filename":{},"pageview-count":{},"prism-themes":{},"expandable-chapters-small2":{"articlesExpand":true},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/2_3.md","mtime":"2019-05-20T14:52:41.230Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-22T14:16:16.117Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Python基本数据类型","level":"2.3","depth":1,"next":{"title":"Python字符集问题","level":"2.4","depth":1,"path":"chapter2/2_4.md","ref":"chapter2/2_4.md","articles":[]},"previous":{"title":"注释、分号和换行","level":"2.2","depth":1,"path":"chapter2/2_2.md","ref":"chapter2/2_2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","codeblock-filename","tbfed-pagefooter","github","-lunr","-search","search-plus","ace","prism","prism-themes","code","expandable-chapters-small","splitter","emphasize","donate","change_girls","-back-to-top-button","pageview-count","anchor-navigation-ex","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy liangqi","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"emphasize":{},"ace":{},"github":{"url":"https://github.com/lqryo/python_n_C-_gitbook"},"livereload":{},"splitter":{},"change_girls":{"time":30,"urls":["https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg","https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg"]},"code":{"copyButtons":true},"donate":{"alipay":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/AliPay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/WeixinPay.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"codeblock-filename":{},"pageview-count":{},"prism-themes":{},"expandable-chapters-small2":{"articlesExpand":true},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/2_3.md","mtime":"2019-06-03T09:58:30.213Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-04T08:23:19.365Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -535,6 +632,10 @@ num <span class="token operator">=</span> <span class="token number">1.0</span>
     
         
         <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

@@ -359,12 +359,109 @@
             
         </li>
     
+        <li class="chapter " data-level="3.4" data-path="3_4.html">
+            
+                <a href="3_4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    跨平台调用C语言库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="3_5.html">
+            
+                <a href="3_5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Ctypes获取返回值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="3_6.html">
+            
+                <a href="3_6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    Ctypes传递回调函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="3_7.html">
+            
+                <a href="3_7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    在c函数中调用Python函数s
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
-        <li class="header">Part4</li>
+        <li class="header">Python源码跨平台的编译</li>
         
         
+    
+        <li class="chapter " data-level="4.1" data-path="../chapter4/4_1.html">
+            
+                <a href="../chapter4/4_1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Python源码编译和安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python的C-C++扩展库——模块和函数</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../chapter5/5_1.html">
+            
+                <a href="../chapter5/5_1.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Python的C扩展库模块入口创建
+            
+                </a>
+            
+
+            
+        </li>
     
 
     
@@ -411,13 +508,59 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;c"><b></b>python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;C++</a></li></ul></div><a href="#python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;c" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;c"><a name="python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;c" class="anchor-navigation-ex-anchor" href="#python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;c"><i class="fa fa-link" aria-hidden="true"></i></a>python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;C++</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;c"><b></b>python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;C++</a></li><ul><ul><li><span class="title-icon "></span><a href="#linux"><b></b>Linux</a></li></ul></ul></ul></div><a href="#python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;c" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;c"><a name="python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;c" class="anchor-navigation-ex-anchor" href="#python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;c"><i class="fa fa-link" aria-hidden="true"></i></a>python&#x7528;ctypes&#x8C03;&#x7528;&#x7684;windows&#x4E0A;C++</h1>
 <p>&#x6211;&#x4EEC;&#x5728;windows&#x4E0A;&#x5B9E;&#x9645;&#x6F14;&#x793A;ctypes&#x7684;&#x4F7F;&#x7528;</p>
+<font color="green">&#x63D0;&#x793A;&#xFF1A;windows&#x4E2D;&#x4EE5;&#x540E;&#x7F00;&#x540D;&#x6765;&#x533A;&#x5206;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;Linux&#x4E2D;&#x6587;&#x4EF6;&#x540E;&#x7F00;&#x540D;&#x5BF9;&#x7CFB;&#x7EDF;&#x65E0;&#x5DEE;&#x522B;</font>
+
 <p>&#x9996;&#x5148;&#x5728;vs2017&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;win32&#x63A7;&#x5236;&#x53F0;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x9009;&#x62E9;<code>dll</code>&#x548C;<code>&#x7A7A;&#x9879;&#x76EE;</code>&#xFF0C;&#x5982;&#x4E0B;&#x56FE;</p>
 <p align="center"><img src="https://raw.githubusercontent.com/lqryo/imgurl/master/python_n_C-_gitbook/chapter3/1.png" width="50%" height="50%" align="middle" alt="&#x8BBE;&#x7F6E;"></p>
 
+<p>&#x521B;&#x5EFA;<code>typesdll.cpp</code>&#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5982;&#x4E0B;</p>
+<div><p class="code-filename">typesdll.cpp</p></div>
+<pre class="language-"><code class="lang-cpp"><span class="token comment">//C++&#x4E2D;&#x7F16;&#x8BD1;c&#x683C;&#x5F0F;&#x7684;&#x51FD;&#x6570;,&#x5982;&#x679C;&#x7528;C&#x8BED;&#x8A00;&#x767E;&#x8872;&#x8863;&#x4E0D;&#x9700;&#x8981;&#xFF08;&#x6587;&#x4EF6;&#x540E;&#x7F00;&#x540D;.c&#xFF09;</span>
+<span class="token comment">// __declspec(dllexport) &#x51FD;&#x6570;&#x5BFC;&#x51FA;&#x5230;&#x5E93;&#x4E2D;</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 
-<p>windows&#x4E2D;&#x4EE5;&#x540E;&#x7F00;&#x540D;&#x6765;&#x533A;&#x5206;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;Linux&#x4E2D;&#x6587;&#x4EF6;&#x540E;&#x7F00;&#x540D;&#x5BF9;&#x7CFB;&#x7EDF;&#x65E0;&#x5DEE;&#x522B;</p>
+<span class="token keyword">extern</span> <span class="token string">&quot;C&quot;</span> <span class="token function">__declspec</span><span class="token punctuation">(</span>dllexport<span class="token punctuation">)</span>
+<span class="token keyword">void</span> <span class="token function">TestCtypes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;In C TestCtypes\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7F16;&#x8BD1;&#x751F;&#x6210;<code>testctypes.dll</code>&#x6587;&#x4EF6;,&#x6211;&#x4EEC;&#x518D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>testctypes.py</code>&#x6587;&#x4EF6;&#xFF0C;</p>
+<div><p class="code-filename">testctypes.py</p></div>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> ctypes <span class="token keyword">import</span> <span class="token operator">*</span>
+
+<span class="token comment"># &#x5BFC;&#x5165;&#x5E93; windows&#x4E2D;dll&#x540E;&#x7F00;&#x540D;&#x4E0D;&#x7528;&#x52A0;</span>
+lib <span class="token operator">=</span> CDLL<span class="token punctuation">(</span><span class="token string">&quot;testctypes&quot;</span><span class="token punctuation">)</span>
+lib<span class="token punctuation">.</span>TestCtypes<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x4E0A;&#x8FF0;pyhton&#x7A0B;&#x5E8F;&#xFF0C;&#x4F1A;&#x62A5;&#x5982;&#x4E0B;&#x9519;&#x8BEF;</p>
+<blockquote>
+<p>OSError: [WinError 126] &#x627E;&#x4E0D;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x6A21;&#x5757;&#x3002;</p>
+</blockquote>
+<p><strong>&#x8FD9;&#x91CC;&#x6211;&#x5C06;dll&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230;&#x548C;<code>testctypes.py</code>&#x540C;&#x4E00;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x4F9D;&#x7136;&#x62A5;&#x9519;&#x3002;&#x5C06;dll&#x62F7;&#x8D1D;&#x5230;&#x548C;<code>python.exe</code>&#x7EDF;&#x4E00;&#x76EE;&#x5F55;&#x4E0B;&#x65F6;&#xFF0C;&#x7A0B;&#x5E8F;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x3002;&#x4F7F;&#x7528;<code>os.chdir</code>&#x5C06;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x66F4;&#x6539;&#x5230;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#xFF0C;&#x9519;&#x8BEF;&#x4F9D;&#x65E7;&#x3002;&#x539F;&#x56E0;&#x6682;&#x65F6;&#x8FD8;&#x672A;&#x627E;&#x5230;</strong></p>
+<font color="green">&#x6CE8;&#x610F;&#xFF1A;&#x751F;&#x6210;&#x7684;dll&#x7684;&#x4F4D;&#x6570;&#x7248;&#x672C;(x86&#x6216;x64)&#x8981;&#x4E0E;&#x6240;&#x88C5;python&#x7684;&#x4F4D;&#x6570;&#x7248;&#x672C;&#x4E00;&#x81F4;</font>
+
+<h3 id="linux"><a name="linux" class="anchor-navigation-ex-anchor" href="#linux"><i class="fa fa-link" aria-hidden="true"></i></a>Linux</h3>
+<p>&#x5728;windows&#x4E2D;&#x8C03;&#x7528;&#x7684;&#x662F;<code>dll</code>&#x52A8;&#x6001;&#x94FE;&#x63A5;&#x5E93;&#xFF0C;&#x5728;Linux&#x4E2D;&#x8C03;&#x7528;<code>.so</code>&#x52A8;&#x6001;&#x94FE;&#x63A5;&#x5E93;&#x3002;</p>
+<p>&#x5728;liunx&#x4E2D;&#x4EE3;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x662F;<code>utf-8</code>&#xFF0C;&#x800C;&#x5728;vs&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x7F16;&#x7801;&#x662F;<code>gbk</code>&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x7528;&#x5B8F;&#x5B9A;&#x4E49;&#x6765;&#x5B9E;&#x73B0;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x8DE8;&#x5E73;&#x53F0;,&#x5C06;<code>typesdll.cpp</code>&#x6587;&#x4EF6;&#x6539;&#x4E3A;&#x5982;&#x4E0B;</p>
+<div><p class="code-filename">typesdll.cpp</p></div>
+<pre class="language-"><code class="lang-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token comment">// &#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;windows WIN32</span>
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> _WIN32  </span><span class="token comment">//&#x5305;&#x542B;win32&#x548C;win64</span>
+    <span class="token macro property">#<span class="token directive keyword">define</span> XLIB __declspec(dllexport)</span>
+<span class="token macro property">#<span class="token directive keyword">else</span></span>
+    <span class="token macro property">#<span class="token directive keyword">define</span> XLIB</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+
+<span class="token keyword">extern</span> <span class="token string">&quot;C&quot;</span> XLIB <span class="token keyword">void</span> <span class="token function">TestCtypes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;In C TestCtypes\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
 <hr>
 <p>Reference:</p>
 <ol>
@@ -425,7 +568,7 @@
 <li><a href="https://blog.csdn.net/xiaoge2030/article/details/77604645" target="_blank">&#x5982;&#x4F55;&#x5728;VS2017&#x4E2D;&#x521B;&#x5EFA;WIN32&#x63A7;&#x5236;&#x53F0;&#x7A0B;&#x5E8F;</a> </li>
 </ol>
 <footer class="page-footer"><span class="copyright">&#xA9; liangqi all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-05-22
+2019-05-24
 </span></footer>
                                 
                                 </section>
@@ -469,7 +612,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"python用ctypes调用的windows上C++","level":"3.2","depth":1,"next":{"title":"python的ctypes与C语言类型转换","level":"3.3","depth":1,"path":"chapter3/3_3.md","ref":"chapter3/3_3.md","articles":[]},"previous":{"title":"ctypes库介绍","level":"3.1","depth":1,"path":"chapter3/3_1.md","ref":"chapter3/3_1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","codeblock-filename","tbfed-pagefooter","github","-lunr","-search","search-plus","ace","prism","prism-themes","code","expandable-chapters-small","splitter","emphasize","donate","change_girls","-back-to-top-button","pageview-count","anchor-navigation-ex"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy liangqi","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"emphasize":{},"ace":{},"github":{"url":"https://github.com/lqryo/python_n_C-_gitbook"},"splitter":{},"change_girls":{"time":30,"urls":["https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg","https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg"]},"code":{"copyButtons":true},"donate":{"alipay":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/AliPay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/WeixinPay.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"codeblock-filename":{},"pageview-count":{},"prism-themes":{},"expandable-chapters-small2":{"articlesExpand":true},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/3_2.md","mtime":"2019-05-22T14:15:21.828Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-22T14:16:16.117Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"python用ctypes调用的windows上C++","level":"3.2","depth":1,"next":{"title":"python的ctypes与C语言类型转换","level":"3.3","depth":1,"path":"chapter3/3_3.md","ref":"chapter3/3_3.md","articles":[]},"previous":{"title":"ctypes库介绍","level":"3.1","depth":1,"path":"chapter3/3_1.md","ref":"chapter3/3_1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","codeblock-filename","tbfed-pagefooter","github","-lunr","-search","search-plus","ace","prism","prism-themes","code","expandable-chapters-small","splitter","emphasize","donate","change_girls","-back-to-top-button","pageview-count","anchor-navigation-ex","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy liangqi","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"emphasize":{},"ace":{},"github":{"url":"https://github.com/lqryo/python_n_C-_gitbook"},"livereload":{},"splitter":{},"change_girls":{"time":30,"urls":["https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg","https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg"]},"code":{"copyButtons":true},"donate":{"alipay":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/AliPay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/WeixinPay.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"codeblock-filename":{},"pageview-count":{},"prism-themes":{},"expandable-chapters-small2":{"articlesExpand":true},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/3_2.md","mtime":"2019-05-24T12:25:25.580Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-04T08:23:19.365Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -520,6 +663,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>ctypes库介绍 · GitBook</title>
+        <title>Python源码编译和安装 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -101,10 +101,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="3_2.html" />
+    <link rel="next" href="../chapter5/5_1.html" />
     
     
-    <link rel="prev" href="../chapter2/2_10.html" />
+    <link rel="prev" href="../chapter3/3_7.html" />
     
 
     </head>
@@ -314,9 +314,9 @@
         
         
     
-        <li class="chapter active" data-level="3.1" data-path="3_1.html">
+        <li class="chapter " data-level="3.1" data-path="../chapter3/3_1.html">
             
-                <a href="3_1.html">
+                <a href="../chapter3/3_1.html">
             
                     
                         <b>3.1.</b>
@@ -329,9 +329,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="3_2.html">
+        <li class="chapter " data-level="3.2" data-path="../chapter3/3_2.html">
             
-                <a href="3_2.html">
+                <a href="../chapter3/3_2.html">
             
                     
                         <b>3.2.</b>
@@ -344,9 +344,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="3_3.html">
+        <li class="chapter " data-level="3.3" data-path="../chapter3/3_3.html">
             
-                <a href="3_3.html">
+                <a href="../chapter3/3_3.html">
             
                     
                         <b>3.3.</b>
@@ -359,9 +359,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="3_4.html">
+        <li class="chapter " data-level="3.4" data-path="../chapter3/3_4.html">
             
-                <a href="3_4.html">
+                <a href="../chapter3/3_4.html">
             
                     
                         <b>3.4.</b>
@@ -374,9 +374,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="3_5.html">
+        <li class="chapter " data-level="3.5" data-path="../chapter3/3_5.html">
             
-                <a href="3_5.html">
+                <a href="../chapter3/3_5.html">
             
                     
                         <b>3.5.</b>
@@ -389,9 +389,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.6" data-path="3_6.html">
+        <li class="chapter " data-level="3.6" data-path="../chapter3/3_6.html">
             
-                <a href="3_6.html">
+                <a href="../chapter3/3_6.html">
             
                     
                         <b>3.6.</b>
@@ -404,9 +404,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.7" data-path="3_7.html">
+        <li class="chapter " data-level="3.7" data-path="../chapter3/3_7.html">
             
-                <a href="3_7.html">
+                <a href="../chapter3/3_7.html">
             
                     
                         <b>3.7.</b>
@@ -426,9 +426,9 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../chapter4/4_1.html">
+        <li class="chapter active" data-level="4.1" data-path="4_1.html">
             
-                <a href="../chapter4/4_1.html">
+                <a href="4_1.html">
             
                     
                         <b>4.1.</b>
@@ -493,7 +493,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >ctypes库介绍</a>
+        <a href=".." >Python源码编译和安装</a>
     </h1>
 </div>
 
@@ -508,27 +508,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#ctypes&#x5E93;&#x4ECB;&#x7ECD;"><b></b>ctypes&#x5E93;&#x4ECB;&#x7ECD;</a></li><li><span class="title-icon "></span><a href="#windows&#x7248;&#x672C;ctypes&#x793A;&#x4F8B;"><b></b>windows&#x7248;&#x672C;ctypes&#x793A;&#x4F8B;</a></li><ul><ul><li><span class="title-icon "></span><a href="#declspecdllexport"><b></b>__declspec(dllexport)</a></li><li><span class="title-icon "></span><a href="#extern-c"><b></b>extern &quot;C&quot;</a></li><li><span class="title-icon "></span><a href="#dll&#x67E5;&#x627E;&#x76EE;&#x5F55;"><b></b>dll&#x67E5;&#x627E;&#x76EE;&#x5F55;</a></li></ul></ul></ul></div><a href="#ctypes&#x5E93;&#x4ECB;&#x7ECD;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="ctypes&#x5E93;&#x4ECB;&#x7ECD;"><a name="ctypes&#x5E93;&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#ctypes&#x5E93;&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>ctypes&#x5E93;&#x4ECB;&#x7ECD;</h1>
-<p>Ctypes&#x7B97;&#x662F;python&#x548C;C++&#x8054;&#x5408;&#x7F16;&#x7A0B;&#x4E2D;&#x6700;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6848;&#xFF0C;&#x5B83;&#x5BF9;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#x5404;&#x65B9;&#x9762;&#x7684;&#x5173;&#x8054;&#x6027;&#x8981;&#x6C42;&#x90FD;&#x4E0D;&#x9AD8;&#xFF0C;&#x800C;&#x4E14;ctypes&#x662F;&#x72EC;&#x7ACB;&#x7F16;&#x7A0B;&#x7684;&#xFF0C;&#x4E0E;python&#x7248;&#x672C;&#x7684;&#x5173;&#x8054;&#x6027;&#x4E5F;&#x4E0D;&#x9AD8;&#x3002;</p>
-<p><a href="https://docs.python.org/3/library/ctypes.html" target="_blank">python&#x5B98;&#x7F51;</a>&#x5173;&#x4E8E;ctypes&#x7684;&#x4ECB;&#x7ECD;&#x5982;&#x4E0B;</p>
-<blockquote>
-<p>ctypes is a foreign function library for Python. It provides C compatible data types, and allows calling functions in DLLs or shared libraries. It can be used to wrap these libraries in pure Python.</p>
-</blockquote>
-<p><strong>&#x8054;&#x5408;&#x7F16;&#x7A0B;&#x5E94;&#x7528;</strong>&#xFF1A;&#x4E0E;&#x786C;&#x4EF6;&#x7684;&#x7ED3;&#x5408;&#xFF0C;&#x53EF;&#x80FD;&#x53EA;&#x662F;&#x8C03;&#x4E00;&#x4E9B;&#x5E95;&#x5C42;&#x7684;&#x63A5;&#x53E3;&#xFF08;&#x8BBF;&#x95EE;&#x6444;&#x50CF;&#x673A;&#xFF09;&#xFF0C;&#x7528;&#x4E0D;&#x4E86;&#x592A;&#x591A;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6CA1;&#x5FC5;&#x8981;&#x53BB;&#x5F00;&#x53D1;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x5E93;&#xFF0C;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6848;&#x662F;&#x7F16;&#x4E00;&#x4E2A;&#x52A8;&#x6001;&#x94FE;&#x63A5;&#x5E93;&#x7ED9;python(&#x6BD4;&#x5982;&#x505A;&#x5D4C;&#x5165;&#x5F0F;&#x8BBE;&#x5907;&#xFF0C;&#x8C03;&#x9A71;&#x52A8;&#x51FA;&#x73B0;&#x7684;&#x63A5;&#x53E3;)&#x3002;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x6D89;&#x53CA;&#x5927;&#x6027;&#x80FD;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x6216;&#x8005;&#x4E00;&#x4E9B;&#x7B97;&#x6CD5;&#x5728;C&#x5F53;&#x4E2D;&#x5B9E;&#x73B0;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x63A5;&#x53E3;&#x4F20;&#x5230;Python</p>
-<font color="green">&#x6CE8;&#x610F;&#xFF1A;ctypes&#x548C;Python&#x7684;&#x4EA4;&#x4E92;&#x63A5;&#x53E3;&#x8FD8;&#x662F;&#x76F8;&#x5BF9;&#x7B80;&#x5355;&#xFF0C;&#x4E00;&#x4E9B;&#x590D;&#x6742;&#x7684;&#x4EA4;&#x4E92;&#x65B9;&#x5F0F;&#x8FD8;&#x662F;&#x65E0;&#x6CD5;&#x505A;&#x5230;&#xFF0C;&#x56E0;&#x6B64;&#x7B97;&#x6CD5;&#x4E0D;&#x80FD;&#x592A;&#x590D;&#x6742;</font>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#python&#x7F16;&#x8BD1;windows&#x73AF;&#x5883;&#x51C6;&#x5907;"><b></b>python&#x7F16;&#x8BD1;windows&#x73AF;&#x5883;&#x51C6;&#x5907;</a></li><li><span class="title-icon "></span><a href="#&#x5B8C;&#x6210;python&#x6E90;&#x7801;&#x5728;windows&#x4E2D;&#x7F16;&#x8BD1;"><b></b>&#x5B8C;&#x6210;python&#x6E90;&#x7801;&#x5728;windows&#x4E2D;&#x7F16;&#x8BD1;</a></li></ul></div><a href="#python&#x7F16;&#x8BD1;windows&#x73AF;&#x5883;&#x51C6;&#x5907;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p>&#x6211;&#x4EEC;&#x524D;&#x9762;&#x7528;CTypes&#x6765;&#x8C03;&#x7528;python&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6CA1;&#x6709;&#x5173;&#x6CE8;&#x5230;Python&#x7684;&#x6E90;&#x7801;&#xFF0C;
+&#x6211;&#x4EEC;&#x662F;&#x901A;&#x8FC7;&#x751F;&#x6210;&#x52A8;&#x6001;&#x94FE;&#x63A5;&#x5E93;&#x7528;API&#x6765;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x5185;&#x90E8;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x7075;&#x6D3B;&#x6027;&#x5F88;&#x5F3A;&#x3002;
+&#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8981;&#x6DF1;&#x5165;Python&#x5185;&#x90E8;&#xFF0C;&#x5305;&#x62EC;&#x505A;&#x591A;&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x5F88;&#x96BE;&#x505A;&#x4E86;&#x3002;
+&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5E76;&#x6CA1;&#x6709;&#x8C03;&#x7528;Python&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x548C;python&#x7684;&#x865A;&#x62DF;&#x673A;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#xFF0C;
+&#x6240;&#x4EE5;&#x4E00;&#x4E9B;&#x66F4;&#x6DF1;&#x5165;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x505A;&#x6269;&#x5C55;&#x6A21;&#x5757;&#x3002;
+&#x505A;&#x6269;&#x5C55;&#x6A21;&#x5757;&#x6D89;&#x53CA;&#x5230;&#x7684;&#x95EE;&#x9898;&#x662F;&#x8981;&#x8C03;Python&#x7684;&#x6E90;&#x7801;&#xFF0C;&#x8C03;&#x7528;python&#x6E90;&#x7801;&#x76F4;&#x63A5;&#x7528;&#x5DF2;&#x5B89;&#x88C5;&#x597D;&#x7684;&#x4E5F;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF0C;
+&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x8C03;&#x8BD5;&#x8DDF;&#x8FDB;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x628A;python&#x7684;&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x4E00;&#x4E0B;&#xFF0C;&#x751F;&#x6210;&#x5B83;&#x7684;&#x8C03;&#x8BD5;&#x4FE1;&#x606F;&#xFF0C;
+&#x800C;&#x4E14;&#x8FD8;&#x8981;&#x6839;&#x636E;&#x5B83;&#x7684;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#x3002;</p>
+<font color="green">&#x6CE8;&#x610F;&#xFF1A;&#x6269;&#x5C55;&#x5E93;&#x4E00;&#x5B9A;&#x8981;&#x8DDF;&#x7248;&#x672C;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#xFF0C;&#x5B83;&#x548C;`Ctypes`&#x7684;&#x5F15;&#x7528;&#x65B9;&#x5F0F;&#x4E0D;&#x592A;&#x4E00;&#x6837;&#x3002;ctypes&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x8BBF;&#x95EE;dll&#xFF0C;&#x800C;&#x6269;&#x5C55;&#x5E93;&#x662F;&#x5C06;&#x7A0B;&#x5E8F;&#x76F4;&#x63A5;&#x5D4C;&#x5165;&#x8FDB;&#x53BB;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x800C;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;&#x63A5;&#x53E3;&#x5730;&#x5740;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;</font>
 
-<p>&#x672C;&#x6559;&#x7A0B;&#x5747;&#x662F;&#x4EE5;<code>windows</code>&#x5E73;&#x53F0;&#x4E3A;&#x4F8B;&#x7F16;&#x52A8;&#x6001;&#x5E93;&#xFF08;vs2017&#xFF09;&#xFF0C;&#x5BF9;&#x4E8E;<code>linux</code>&#x548C;<code>Mac</code>&#x5E73;&#x53F0;&#x53EF;&#x81EA;&#x884C;&#x67E5;&#x9605;&#x8D44;&#x6599;&#x3002;</p>
-<h1 id="windows&#x7248;&#x672C;ctypes&#x793A;&#x4F8B;"><a name="windows&#x7248;&#x672C;ctypes&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#windows&#x7248;&#x672C;ctypes&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>windows&#x7248;&#x672C;ctypes&#x793A;&#x4F8B;</h1>
-<h3 id="declspecdllexport"><a name="declspecdllexport" class="anchor-navigation-ex-anchor" href="#declspecdllexport"><i class="fa fa-link" aria-hidden="true"></i></a>__declspec(dllexport)</h3>
-<p>&#x6211;&#x4EEC;&#x5728;windows&#x4E2D;&#x7F16;&#x5199;&#x4E00;&#x4E2A;dll&#x52A8;&#x6001;&#x94FE;&#x63A5;&#x5E93;&#x6765;&#x4F9B;python&#x8C03;&#x7528;&#x3002;window&#x91CC;&#x7684;&#x52A8;&#x6001;&#x94FE;&#x63A5;&#x5E93;&#x4E0E;linux&#x548C;Mac&#x6709;&#x6240;&#x533A;&#x522B;&#xFF0C;&#x5B83;&#x9700;&#x8981;&#x8BBE;&#x7F6E;<code>\_\_declspec(dllexport)</code>&#xFF0C;&#x5728;linux&#x548C;Mac&#x4E2D;&#x4E0D;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x79FB;&#x690D;&#x5230;linux&#x4E2D;&#x65F6;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x5B8F;&#x6765;&#x5224;&#x65AD;&#x5F53;&#x524D;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;</p>
-<p>REF:<a href="https://blog.csdn.net/huangyimo/article/details/81748939" target="_blank">__declspec(dllexport)&#x4E0E;__declspec(dllimport)</a></p>
-<h3 id="extern-c"><a name="extern-c" class="anchor-navigation-ex-anchor" href="#extern-c"><i class="fa fa-link" aria-hidden="true"></i></a>extern &quot;C&quot;</h3>
-<p>python&#x652F;&#x6301;&#x7684;ctypes&#x51FD;&#x6570;&#x90FD;&#x662F;C&#x8BED;&#x8A00;&#x7684;&#x51FD;&#x6570;&#xFF0C;
-C&#x8BED;&#x8A00;&#x51FD;&#x6570;&#x4E0D;&#x652F;&#x6301;&#x91CD;&#x8F7D;&#x800C;C++&#x8BED;&#x8A00;&#x7684;&#x51FD;&#x6570;&#x652F;&#x6301;&#x91CD;&#x8F7D;&#xFF0C;&#x5BF9;C++&#x6765;&#x8BF4;&#x5B83;&#x5B58;&#x5230;&#x7CFB;&#x7EDF;&#x7684;&#x51FD;&#x6570;&#x540D;&#x4F1A;&#x5C06;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x52A0;&#x8FDB;&#x53BB;&#xFF0C;&#x4F7F;&#x5F97;C&#x4E0E;C++&#x7684;&#x51FD;&#x6570;&#x540D;&#x4E0D;&#x4E00;&#x81F4;&#x3002;&#x6240;&#x4EE5;&#x8981;&#x5728;C++&#x51FD;&#x6570;&#x524D;&#x9762;&#x52A0;&#x4E0A;<code>extern &quot;C&quot;</code>&#xFF0C;&#x8FD9;&#x6837;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x5C06;&#x51FD;&#x6570;&#x7F16;&#x8BD1;&#x6210;C&#x7684;&#x51FD;&#x6570;&#x3002;</p>
-<h3 id="dll&#x67E5;&#x627E;&#x76EE;&#x5F55;"><a name="dll&#x67E5;&#x627E;&#x76EE;&#x5F55;" class="anchor-navigation-ex-anchor" href="#dll&#x67E5;&#x627E;&#x76EE;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>dll&#x67E5;&#x627E;&#x76EE;&#x5F55;</h3>
-<p>dll&#x5E93;&#x5728;&#x7CFB;&#x7EDF;&#x76EE;&#x5F55;&#x6216;&#x5F53;&#x524D;&#x6267;&#x884C;&#x76EE;&#x5F55;&#xFF0C;&#x4E0E;python&#x5E93;&#x67E5;&#x627E;&#x8DEF;&#x5F84;<code>sys.path</code>&#x65E0;&#x5173;&#xFF0C;<code>sys.path</code>&#x53EA;&#x80FD;&#x5F71;&#x54CD;&#x5230;python&#x7684;&#x5E93;&#x548C;&#x7528;C++&#x505A;&#x7684;&#x6269;&#x5C55;&#x5E93;&#xFF0C;&#x5BF9;dll&#x7684;&#x67E5;&#x627E;&#x8DEF;&#x5F84;&#x4E0D;&#x4EA7;&#x751F;&#x5F71;&#x54CD;&#x3002;</p>
+<p><strong>&#x603B;&#x4E4B;&#xFF0C;&#x505A;&#x6269;&#x5C55;&#x5E93;&#x7684;&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x5C06;python&#x7684;&#x6574;&#x4E2A;&#x6E90;&#x7801;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#xFF0C;&#x7F16;&#x8BD1;&#x5B8C;&#x4E4B;&#x540E;&#x751F;&#x6210;exe&#x6587;&#x4EF6;</strong></p>
+<h1 id="python&#x7F16;&#x8BD1;windows&#x73AF;&#x5883;&#x51C6;&#x5907;"><a name="python&#x7F16;&#x8BD1;windows&#x73AF;&#x5883;&#x51C6;&#x5907;" class="anchor-navigation-ex-anchor" href="#python&#x7F16;&#x8BD1;windows&#x73AF;&#x5883;&#x51C6;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>python&#x7F16;&#x8BD1;windows&#x73AF;&#x5883;&#x51C6;&#x5907;</h1>
+<p>&#x5148;&#x5728;<a href="www.python.org">python&#x5B98;&#x7F51;</a>&#x4E0B;&#x8F7D;python&#x6E90;&#x7801;&#xFF0C;&#x5728;Linux&#x91CC;&#x9762;&#x6211;&#x4EEC;&#x7528;<code>gcc</code>&#x6216;<code>clang</code>&#xFF0C;&#x5728;windows&#x4E2D;&#x4F7F;&#x7528;<code>vs</code>&#x7F16;&#x8BD1;&#x3002;vs2015&#x4E2D;&#x5305;&#x542B;win10SDK,</p>
+<p><strong>python&#x4F9D;&#x8D56;&#x5DE5;&#x5177;&#x548C;&#x5E93;</strong></p>
+<ul>
+<li>nuget python&#x8FD0;&#x884C;&#x73AF;&#x5883;</li>
+<li>&#x5176;&#x4ED6;&#x4F9D;&#x8D56;&#x5E93;&#x6E90;&#x7801; sqlite openssl zips ...</li>
+</ul>
+<p>Python&#x6E90;&#x7801;&#x8DEF;&#x5F84;</p>
+<ul>
+<li><code>PCbuild</code>&#x9879;&#x76EE;&#x8DEF;&#x5F84;(windows)  &#x5B58;&#x653E;&#x57FA;&#x4E8E;vs&#x7684;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x548C;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x6587;&#x4EF6;</li>
+<li><code>PCbuild/win32</code> &#x7F16;&#x8BD1;&#x8F93;&#x51FA;</li>
+<li><code>externals</code> &#x4F9D;&#x8D56;&#x5DE5;&#x5177;&#x548C;&#x5E93;</li>
+<li><code>Lib\site-packages</code>&#x6269;&#x5C55;&#x5E93;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;</li>
+</ul>
+<h1 id="&#x5B8C;&#x6210;python&#x6E90;&#x7801;&#x5728;windows&#x4E2D;&#x7F16;&#x8BD1;"><a name="&#x5B8C;&#x6210;python&#x6E90;&#x7801;&#x5728;windows&#x4E2D;&#x7F16;&#x8BD1;" class="anchor-navigation-ex-anchor" href="#&#x5B8C;&#x6210;python&#x6E90;&#x7801;&#x5728;windows&#x4E2D;&#x7F16;&#x8BD1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B8C;&#x6210;python&#x6E90;&#x7801;&#x5728;windows&#x4E2D;&#x7F16;&#x8BD1;</h1>
 <footer class="page-footer"><span class="copyright">&#xA9; liangqi all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-05-22
+2019-06-03
 </span></footer>
                                 
                                 </section>
@@ -556,12 +563,12 @@ C&#x8BED;&#x8A00;&#x51FD;&#x6570;&#x4E0D;&#x652F;&#x6301;&#x91CD;&#x8F7D;&#x800C
 
             
                 
-                <a href="../chapter2/2_10.html" class="navigation navigation-prev " aria-label="Previous page: 多进程">
+                <a href="../chapter3/3_7.html" class="navigation navigation-prev " aria-label="Previous page: 在c函数中调用Python函数s">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="3_2.html" class="navigation navigation-next " aria-label="Next page: python用ctypes调用的windows上C++">
+                <a href="../chapter5/5_1.html" class="navigation navigation-next " aria-label="Next page: Python的C扩展库模块入口创建">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -572,7 +579,7 @@ C&#x8BED;&#x8A00;&#x51FD;&#x6570;&#x4E0D;&#x652F;&#x6301;&#x91CD;&#x8F7D;&#x800C
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ctypes库介绍","level":"3.1","depth":1,"next":{"title":"python用ctypes调用的windows上C++","level":"3.2","depth":1,"path":"chapter3/3_2.md","ref":"chapter3/3_2.md","articles":[]},"previous":{"title":"多进程","level":"2.10","depth":1,"path":"chapter2/2_10.md","ref":"chapter2/2_10.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","codeblock-filename","tbfed-pagefooter","github","-lunr","-search","search-plus","ace","prism","prism-themes","code","expandable-chapters-small","splitter","emphasize","donate","change_girls","-back-to-top-button","pageview-count","anchor-navigation-ex","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy liangqi","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"emphasize":{},"ace":{},"github":{"url":"https://github.com/lqryo/python_n_C-_gitbook"},"livereload":{},"splitter":{},"change_girls":{"time":30,"urls":["https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg","https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg"]},"code":{"copyButtons":true},"donate":{"alipay":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/AliPay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/WeixinPay.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"codeblock-filename":{},"pageview-count":{},"prism-themes":{},"expandable-chapters-small2":{"articlesExpand":true},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/3_1.md","mtime":"2019-05-22T12:47:03.655Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-04T08:23:19.365Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Python源码编译和安装","level":"4.1","depth":1,"next":{"title":"Python的C扩展库模块入口创建","level":"5.1","depth":1,"path":"chapter5/5_1.md","ref":"chapter5/5_1.md","articles":[]},"previous":{"title":"在c函数中调用Python函数s","level":"3.7","depth":1,"path":"chapter3/3_7.md","ref":"chapter3/3_7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","codeblock-filename","tbfed-pagefooter","github","-lunr","-search","search-plus","ace","prism","prism-themes","code","expandable-chapters-small","splitter","emphasize","donate","change_girls","-back-to-top-button","pageview-count","anchor-navigation-ex","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy liangqi","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"emphasize":{},"ace":{},"github":{"url":"https://github.com/lqryo/python_n_C-_gitbook"},"livereload":{},"splitter":{},"change_girls":{"time":30,"urls":["https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg","https://raw.githubusercontent.com/lqryo/imgurl/master/2.jpeg"]},"code":{"copyButtons":true},"donate":{"alipay":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/AliPay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/lqryo/imgurl/master/common/WeixinPay.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"codeblock-filename":{},"pageview-count":{},"prism-themes":{},"expandable-chapters-small2":{"articlesExpand":true},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/4_1.md","mtime":"2019-06-03T08:23:54.359Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-04T08:23:19.365Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
